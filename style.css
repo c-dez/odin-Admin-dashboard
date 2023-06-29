@@ -1,0 +1,36 @@
+:root{
+    --mycolor: #475569;
+}
+body{
+    margin: 0;
+    height: 100%;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-template-rows: repeat(4, minmax(300px, 2fr));
+    height: 100vh;
+    
+}
+#header{
+
+    color: red;
+    background-color: var(--mycolor);
+    grid-column: 2/5;
+    height: minmax(100px, 1fr);
+
+}
+
+#dashboard{
+    grid-column: 1fr;
+    background-color: blue;
+    grid-column: 1/2;
+    grid-row: 1/5;
+}
+#content{
+    display: grid;
+    background-color: pink;
+    grid-column: 2/5;
+    grid-row: 2/5;
+}
