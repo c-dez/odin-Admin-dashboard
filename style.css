@@ -8,7 +8,7 @@ body{
     resize: both;
     display: grid;
     height: 100vh;
-    grid-template-columns:minmax(100px,20%) repeat(3, minmax(100px, 1fr));
+    grid-template-columns:minmax(100px,200px) repeat(3, minmax(100px, 1fr));
     grid-template-rows:150px repeat(3, minmax(100px, 1fr));
     grid-auto-rows: 1fr;
     grid-auto-columns: 1fr;
@@ -40,17 +40,23 @@ body{
     margin-left: 10px;
     color: white;
 }
-img{
+.user>img{
     width: 60px;
     border-radius: 50%;
     border: 2px solid orange;
     box-sizing: border-box;
+}
+#items>img{
+    width: 40px;
+    
 }
 .buttons{
     grid-area: 2/3/2/4;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+
+
 }
 .buttons>button{
     width: 80%;
@@ -69,6 +75,17 @@ img{
 .dashboard{
     background-color: #1e293b;
     grid-row: 1/5;
+    display: grid;
+    /* grid-template-columns: repeat(2,1fr); */
+    grid-template-rows: 150px ;
+    grid-auto-rows: 5%;
+    color: white;
+}
+#items{
+    display: grid;
+    grid-template-columns: repeat(2, 50px);
+    align-items: center;
+
 }
 .content{
     background-color: white;
