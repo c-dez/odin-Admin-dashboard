@@ -41,5 +41,8 @@ card6_Title.textContent = 'Six titulo'
 let card6_Text = document.querySelector('.card>#card6-text')
 card6_Text.textContent = '"Lorem ipsum dolor sirci at risus dignissim consequat. Suspendisse potenti. Sed consectetur neque eu pulvinar scelerisque. Integer tincidunt mauris nec dolor tempus, ac blandit justo feugiat.'
 
+//sidecards
 
+let side_panel1 = document.querySelector('.side-cards>.panel1')
+side_panel1.textContent = 'contenido de oanel 1 blabla bla'
 
