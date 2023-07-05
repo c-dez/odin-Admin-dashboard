@@ -35,15 +35,26 @@ body{
     /* align-content: center; */
     /* justify-content: center; */
     align-items: center;
-    grid-template-columns: 50px 100px;
-    gap: 15px;
+    grid-template-columns: 60px 1fr;
+    gap: 5px;
     margin-left: 10px;
+    color: white;
 }
 img{
     width: 60px;
     border-radius: 50%;
     border: 2px solid orange;
     box-sizing: border-box;
+}
+.buttons{
+    grid-area: 2/3/2/4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+.buttons>button{
+    width: 80%;
+    height: 50%;
 }
 .search{
     /* display: grid; */
